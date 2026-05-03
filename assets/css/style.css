@@ -28,7 +28,7 @@ button:hover {
     transition-duration: 0.2s;
 }
 
-button.btn_full {
+button.btn_full.btn_only:only-child {
     width: 100%;
 }
 
