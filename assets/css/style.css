@@ -17,10 +17,26 @@ a:hover svg {
     transition-duration: 0.2s;
 }
 
+button {
+    background-color: var(--colour-secondary);
+    transition-duration: 0.4s;
+    padding: 0.25rem;
+}
+
+button:hover {
+    background-color: var(--colour-primary);
+    transition-duration: 0.2s;
+}
+
+button.btn_full {
+    width: 100%;
+}
+
 nav#main_navigation {
     display: flex;
     justify-content: center;
     height: 3rem;
+    margin-top: 3rem;
 
     a.nav-item {
         
@@ -32,5 +48,22 @@ nav#main_navigation {
             height: 2rem;
             width: 2rem;
         }
+    }
+}
+
+div#app_middle_container {
+    border-color: rgba(255, 255, 255, 0.1);
+    border-style: solid;
+    border-radius: 15px;
+    border-width: 2px;
+    margin: 1rem auto 0px;
+    max-width: 1000px;
+    height: 100px;
+    padding: 1rem;
+    width: 80%;
+
+    h1 {
+        text-align: center;
+        margin: 0px 0px 1rem;
     }
 }
