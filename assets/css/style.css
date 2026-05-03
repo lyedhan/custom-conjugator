@@ -1,3 +1,36 @@
-h1 {
-    color: red;
+@import "/assets/css/color_palette.css";
+
+body {
+    background-color: var(--color-background);
+    font-family: Roboto;
+    color: var(--colour-primary);
+    margin: 0px;
+}
+
+a svg {
+    color: var(--colour-secondary);
+    transition-duration: 0.4s;
+}
+
+a:hover svg {
+    color: var(--colour-primary);
+    transition-duration: 0.2s;
+}
+
+nav#main_navigation {
+    display: flex;
+    justify-content: center;
+    height: 3rem;
+
+    a.nav-item {
+        
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        
+        svg {
+            height: 2rem;
+            width: 2rem;
+        }
+    }
 }

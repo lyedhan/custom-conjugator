@@ -1,4 +1,5 @@
 const app = document.getElementById("app");
+const BASE_URL = new URL(".", import.meta.url);
 
 /**
  * Obtains the pagename from the location hash.
@@ -14,8 +15,10 @@ export function router() {
  */
 async function loadPage(name) {
     
+    const url = new URL(`../html/pages/${name}.html`, BASE_URL);
+
     // Get the page content matching the page name
-    const source = await fetch(`assets/html/pages/${name}.html`);
+    const source = await fetch(url);
     const html = await source.text();
 
     // And populate the app window
